@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+<<<<<<<<< Temporary merge branch 1
+=========
 /**
  * Cryptographic Utility for SHA-256 hashing and digital fingerprint verification
  * using the standard Web Crypto API.
@@ -59,7 +59,7 @@ export function generateTxHash() {
   }
   return result;
 }
->>>>>>> a0f4344a6196ff2b2fa1f66c8f3d591096a442d7
+>>>>>>>>> Temporary merge branch 2
 
 /**
  * Generate a clean human-readable Certificate ID
@@ -75,10 +75,10 @@ export function generateCertificateId() {
   }
   return `CERT-${year}-${part1}-${part2}`;
 }
-<<<<<<< HEAD
-=======
+<<<<<<<<< Temporary merge branch 1
+=========
 
->>>>>>> a0f4344a6196ff2b2fa1f66c8f3d591096a442d7
+>>>>>>>>> Temporary merge branch 2
 /**
  * Highlight character differences between two 64-char hashes
  * to demonstrate the Cryptographic Avalanche Effect visually.
@@ -109,8 +109,8 @@ export function compareHashes(hashA, hashB) {
     percentageChanged: Math.round((diffCount / 64) * 100),
     segments
   };
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
 }
-=======
+=========
 }
->>>>>>> a0f4344a6196ff2b2fa1f66c8f3d591096a442d7
+>>>>>>>>> Temporary merge branch 2
