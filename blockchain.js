@@ -1,4 +1,4 @@
-import { CryptoEngine } from '../crypto.js';
+import { CryptoEngine } from './crypto.js';
 
 const STORAGE_KEYS = {
   CERTIFICATES: 'stamptrust_certificates_v2',

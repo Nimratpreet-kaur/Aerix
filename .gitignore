@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Production builds
+dist/
+build/
+
+# Environment and local config files
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
