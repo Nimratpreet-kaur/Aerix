@@ -1,4 +1,4 @@
-import { CryptoEngine } from '../crypto.js';
+import { CryptoEngine } from './crypto.js';
 import { BlockchainLedger, SEED_CREDENTIALS } from './blockchain.js';
 
 // Global application state
