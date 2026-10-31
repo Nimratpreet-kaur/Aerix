@@ -1,0 +1,126 @@
+/* ==========================================================================
+   STAMPTRUST - DESIGN SYSTEM & CERTIFICATE SECURITY STYLING
+   Color Rule: 60% Crisp White/Canvas, 30% Neutral Slate/Grey, 10% Warm Orange
+   ========================================================================== */
+
+:root {
+  --color-dominant: #FAFAF9;
+  --color-secondary-dark: #0F172A;
+  --color-secondary-slate: #334155;
+  --color-secondary-border: #E2E8F0;
+  --color-accent-orange: #F97316;
+  --color-accent-hover: #EA580C;
+  --color-success-green: #10B981;
+  --color-alert-red: #EF4444;
+}
+
+body {
+  background-color: var(--color-dominant);
+  color: var(--color-secondary-dark);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Guilloche & Security Certificate Border */
+.certificate-frame {
+  border: 12px double #C2410C;
+  outline: 4px solid #FED7AA;
+  outline-offset: -8px;
+  background-color: #FFFFFF;
+}
+
+.certificate-watermark-bg {
+  background-image: radial-gradient(#F97316 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+/* Gold-Orange Foil Holographic Seal */
+.foil-seal {
+  background: radial-gradient(circle, #FED7AA 0%, #F97316 60%, #9A3412 100%);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+}
+
+/* Mining Block Pulse Animation */
+@keyframes blockMiningPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.25);
+    border-color: #FB923C;
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(249, 115, 22, 0.6);
+    border-color: #EA580C;
+  }
+}
+
+.mining-active {
+  animation: blockMiningPulse 1.4s infinite ease-in-out;
+}
+
+/* Hash Diff Visualization */
+.hash-char-same {
+  color: #10B981;
+  background-color: rgba(16, 185, 129, 0.1);
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.hash-char-diff {
+  color: #EF4444;
+  background-color: rgba(239, 68, 68, 0.2);
+  font-weight: 800;
+  padding: 1px;
+  border-radius: 2px;
+  text-decoration: underline;
+}
+
+/* Glassmorphic Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  animation: toastSlideUp 0.25s ease-out;
+}
+
+@keyframes toastSlideUp {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
